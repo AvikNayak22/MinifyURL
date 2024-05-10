@@ -27,7 +27,7 @@ export const getAllUrl = async (
   res: express.Response
 ) => {
   try {
-    const shortUrls = await urlModel.find();
+    const shortUrls = await urlModel.find().sort({ createdAt: -1 });
     if (shortUrls.length < 0) {
       res.status(404).send({ message: "Short Urls not found!" });
     } else {
@@ -67,6 +67,8 @@ export const deleteUrl = async (
       res.status(200).send({ message: "Requested URL successfully deleted!" });
     }
   } catch (error) {
-    res.status(500).send({ message: "Something went wrong!" });
+    res
+      .status(500)
+      .send({ message: "Something went wrong while deleting code!" });
   }
 };
