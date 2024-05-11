@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "stage":"tsc && git status && git add .",
+    "dev":"npx tsc && nodemon ./dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "AvikNayak22",
