@@ -1,6 +1,6 @@
 # MinifyURL
 
-MinifyURL is a URL shortening service built using Node.js, Express.js, React.js, and MongoDB. It allows users to shorten long URLs into concise, easy-to-share links. This repository contains both the backend API and the frontend application for MinifyURL.
+MinifyURL is a URL-shortening application that transforms long URLs into concise links for easier sharing. It simplifies the process of sharing URLs, ideal for social media, email campaigns, and personal use.
 
 ## Features
 
