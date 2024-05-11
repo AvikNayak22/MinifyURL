@@ -4,8 +4,7 @@
   "description": "This project contains url shorter api",
   "main": "server.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node ./dist/server.js",
+    "stage":"tsc && git status && git add .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "AvikNayak22",
