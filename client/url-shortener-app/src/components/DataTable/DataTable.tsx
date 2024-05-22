@@ -9,9 +9,10 @@ interface IDataTableProps {
   updateReloadState: () => void;
 }
 
-const DataTable: React.FunctionComponent<IDataTableProps> = (props) => {
-  const { data, updateReloadState } = props;
-  console.log("Data in dataTable is : ", data);
+const DataTable: React.FunctionComponent<IDataTableProps> = ({
+  data,
+  updateReloadState,
+}) => {
   const renderTableData = () => {
     return data.map((item) => {
       return (
@@ -100,7 +101,7 @@ const DataTable: React.FunctionComponent<IDataTableProps> = (props) => {
   return (
     <div className="container mx-auto pt-2 pb-10 ">
       <div className="relative overflow-x-auto shadow-sm sm:rounded-lg">
-        <table className="w-full table-fixed text-sm text-left rtl:text-right text-gray-500 ">
+        <table className="w-full overflow-x-auto table-fixed text-sm text-left rtl:text-right text-gray-500 ">
           <thead className="text-md uppercase text-gray-50 bg-[#021818] ">
             <tr>
               <th scope="col" className="px-6 py-3 w-6/12 ">

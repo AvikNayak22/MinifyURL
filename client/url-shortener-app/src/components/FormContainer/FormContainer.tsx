@@ -25,7 +25,7 @@ const FormContainer: React.FunctionComponent<IFormContainerProps> = (props) => {
 
   return (
     <div className="container mx-auto p-2">
-      <div className="bg-banner my-8 rounded-xl bg-cover bg-center">
+      <div className="bg-gradient-to-l from-[#0e3e41] to-[#1a5458] my-8 rounded-xl bg-cover bg-center">
         <div className="w-full h-full rounded-xl p-20 backdrop-brightness-50">
           <h2 className="text-white text-4xl text-center pb-4">MinifyURL</h2>
           <p className="text-white text-center pb-3 text-2xl font-extralight">
